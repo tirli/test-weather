@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Test weather project",
   "scripts": {
-    "start": "echo \"Error: no start specified\" && exit 1"
+    "start": "docker-compose up"
   },
   "repository": {
     "type": "git",

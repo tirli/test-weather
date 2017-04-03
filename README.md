@@ -1,14 +1,23 @@
 > Small project for weather using the U.S. National Weather Service web service
+
 Written using koa2 and React.js.
 
-## Installation
-run
+## Prerequisites
 
- ```
- npm install // or yarn
- npm start
- ```
+Software:
+* `node`
+* `yarn` or `npm`
+* `docker`
+* `docker-compose`
 
-## To start a project in dev mode
+## First run
 
-`npm run dev`
+`yarn start -- --build` or `npm start -- --build`
+
+## Subsequent runs
+
+`yarn start` or `npm start`
+
+## Configuration
+
+Environment variables can be changed in `.env` file
