@@ -1,0 +1,24 @@
+{
+  "name": "test-weather",
+  "version": "1.0.0",
+  "description": "Test weather project",
+  "scripts": {
+    "start": "echo \"Error: no start specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tirli/test-weather.git"
+  },
+  "keywords": [
+    "react",
+    "koa2",
+    "weather",
+    "soap"
+  ],
+  "author": "Kate Lizogubova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tirli/test-weather/issues"
+  },
+  "homepage": "https://github.com/tirli/test-weather#readme"
+}
