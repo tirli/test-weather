@@ -4,6 +4,8 @@
   "description": "Backend for weather app",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "./node_modules/.bin/nodemon --harmony index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +13,9 @@
     "soap"
   ],
   "author": "Kate Lizogubova",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "nodemon": "^1.11.0"
+  }
 }
