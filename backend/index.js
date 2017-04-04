@@ -1,12 +1,16 @@
 const Koa = require('koa');
+const router = require('koa-route');
+const createApi = require('./api');
+
 const app = new Koa();
 
 process.on('unhandledRejection', (err) => {
   console.error(err);
 });
 
-app.use(ctx => {
-  ctx.body = 'Hello World';
+createApi().then(api => {
+  app.use(router.get('/api/cities', api.cities));
+  app.use(router.get('/api/forecast', api.forecast));
 });
 
 const port = process.env.PORT || 3001;

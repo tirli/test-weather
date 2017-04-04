@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
+import { encode } from 'querystring';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  componentDidMount() {
+    const query = encode({
+      lat: '35.4',
+      lon: '-97.6',
+    })
+    fetch(`/api/forecast?${query}`);
+  }
+
   render() {
     return (
       <div className="App">
