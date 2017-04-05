@@ -2,7 +2,7 @@ const soap = require('soap');
 const xml2js = require('xml2js');
 const promisify = require('es6-promisify');
 const parseUrl = require('url').parse;
-const { getWeatherByTime } = require('./helpers');
+const { denormalizeForecast } = require('./helpers');
 
 const createSoapClient = promisify(soap.createClient);
 const parseXML = promisify(xml2js.parseString);
@@ -32,20 +32,26 @@ module.exports = async function api() {
 
   async function forecast(ctx) {
     const getForecast = promisify(client.NDFDgenByDay);
-    const { query: { lat, lon, start, days, unit, format } } = parseUrl(ctx.request.url, true);
+    const { query: {
+      lat,
+      lon,
+      start = new Date(),
+      days = 7,
+      unit = 'm',
+      format = '24 hourly',
+    } } = parseUrl(ctx.request.url, true);
     const response = await getForecast({
       latitude: lat,
       longitude: lon,
-      startDate: start || new Date(),
-      numDays: days || 7,
-      Unit: unit || 'm',
-      format: format || '24 hourly',
+      startDate: start,
+      numDays: days,
+      Unit: unit,
+      format,
     });
 
     const result = await parseXML(response.dwmlByDayOut.$value);
-    console.log(getWeatherByTime(result.dwml.data[0], new Date(2017, 3, 6, 16)));
 
-    ctx.body = result.dwml.data;
+    ctx.body = denormalizeForecast(result.dwml.data[0], start, days);
   }
 
   return {
