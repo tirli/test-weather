@@ -6,8 +6,8 @@ import './App.css';
 class App extends Component {
   componentDidMount() {
     const query = encode({
-      lat: '35.4',
-      lon: '-97.6',
+      lat: '33.65',
+      lon: '-84.42',
     })
     fetch(`/api/forecast?${query}`);
   }

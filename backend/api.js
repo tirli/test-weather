@@ -2,6 +2,7 @@ const soap = require('soap');
 const xml2js = require('xml2js');
 const promisify = require('es6-promisify');
 const parseUrl = require('url').parse;
+const { getWeatherByTime } = require('./helpers');
 
 const createSoapClient = promisify(soap.createClient);
 const parseXML = promisify(xml2js.parseString);
@@ -36,12 +37,13 @@ module.exports = async function api() {
       latitude: lat,
       longitude: lon,
       startDate: start || new Date(),
-      numDays: days || 3,
+      numDays: days || 7,
       Unit: unit || 'm',
       format: format || '24 hourly',
     });
 
     const result = await parseXML(response.dwmlByDayOut.$value);
+    console.log(getWeatherByTime(result.dwml.data[0], new Date(2017, 3, 6, 16)));
 
     ctx.body = result.dwml.data;
   }

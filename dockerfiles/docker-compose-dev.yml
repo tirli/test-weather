@@ -16,4 +16,5 @@ services:
     - "../backend:/srv/app"
     ports:
     - "${BACKEND_PORT}:3001"
+    - "9229:9229"
 
