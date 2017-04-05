@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Test weather project",
   "scripts": {
-    "start": "docker-compose up"
+    "prod": "docker-compose -f ./dockerfiles/docker-compose.yml up",
+    "dev": "docker-compose -f ./dockerfiles/docker-compose-dev.yml up"
   },
   "repository": {
     "type": "git",

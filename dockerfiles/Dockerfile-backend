@@ -1,0 +1,11 @@
+FROM node:latest
+
+WORKDIR /srv/app
+
+COPY ./backend/package.json /srv/app
+COPY ./backend/yarn.lock /srv/app
+RUN yarn install
+
+COPY ./backend /srv/app
+
+CMD yarn prod

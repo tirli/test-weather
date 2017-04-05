@@ -12,12 +12,22 @@ Software:
 
 ## First run
 
-`yarn start -- --build` or `npm start -- --build`
+`yarn prod -- --build` or `npm start prod -- --build`
 
 ## Subsequent runs
 
-`yarn start` or `npm start`
+`yarn prod` or `npm run prod`
 
 ## Configuration
 
 Environment variables can be changed in `.env` file
+
+## Development
+
+`yarn` or `npm install` in both frontend and backend directories
+
+`yarn dev -- --build` or `npm run dev -- --build` from root directory for first run
+and
+`yarn dev` or `npm run dev` for subsequent runs
+
+
