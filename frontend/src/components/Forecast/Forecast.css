@@ -1,0 +1,39 @@
+.forecast-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.forecast-item {
+  border: 1px solid #fdf3f1;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: height 1s ease-out 0.5s;
+}
+
+.forecast-item:hover {
+  color:hsla(10, 102%, 35%, 1);
+}
+
+.forecast-left {
+  flex: 1;
+}
+
+.forecast-right {
+  flex: 4;
+}
+
+.forecast-date {
+  font-weight: 400;
+}
+
+.forecast-temperature, .forecast-precipitation {
+  padding: 0.5rem 0;
+}
+
+.hazard-link {
+  color: #ED6A5A;
+  text-decoration: none;
+}

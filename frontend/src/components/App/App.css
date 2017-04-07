@@ -1,0 +1,31 @@
+.app {
+  text-align: center;
+}
+
+.forecast-area {
+  height: calc(100% - 5.5rem);
+  overflow: auto;
+}
+
+.city-name {
+  padding: 0.5rem 0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #ED6A5A;
+
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}

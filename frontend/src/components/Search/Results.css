@@ -1,0 +1,22 @@
+.result-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 3rem;
+  margin: 0 20%;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 1px solid #fee;
+}
+
+.result-item:hover {
+  color: #ED6A5A;
+}
