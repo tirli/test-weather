@@ -46,7 +46,7 @@ function getWeather(weather, timeLayout, time) {
   const index = getIndexByTimeAndLayout(timeLayout, time, get(weather, '$.time-layout'));
   const weatherCondition = get(weather, `weather-conditions[${index}]`);
 
-  if (!weatherCondition) return NO_DATA;
+  if (!weatherCondition || !get(weatherCondition, '$.weather-summary')) return NO_DATA;
 
   return {
     summary: get(weatherCondition, '$.weather-summary'),
@@ -56,7 +56,8 @@ function getWeather(weather, timeLayout, time) {
 
 function getIcon(icons, timeLayout, time) {
   const index = getIndexByTimeAndLayout(timeLayout, time, get(icons, '$.time-layout'));
-  return get(icons, `icon-link[${index}]`);
+  const icon = get(icons, `icon-link[${index}]`);
+  return typeof icon === 'string' ? icon : NO_DATA;
 }
 
 function getHazard(hazards, timeLayout, time) {

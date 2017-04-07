@@ -33,16 +33,16 @@ module.exports = async function api() {
   async function forecast(ctx) {
     const getForecast = promisify(client.NDFDgenByDay);
     const { query: {
-      lat,
-      lon,
+      latitude,
+      longitude,
       start = new Date(),
       days = 7,
       unit = 'm',
       format = '24 hourly',
     } } = parseUrl(ctx.request.url, true);
     const response = await getForecast({
-      latitude: lat,
-      longitude: lon,
+      latitude,
+      longitude,
       startDate: start,
       numDays: days,
       Unit: unit,
