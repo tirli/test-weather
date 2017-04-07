@@ -1,0 +1,369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Helper "denormalizeForecast" fits needed format 1`] = `
+Array [
+  Object {
+    "date": 2017-04-06T21:00:00.000Z,
+    "forecast": Array [
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": null,
+        "precipitation": null,
+        "temperature": Object {
+          "max": null,
+          "min": null,
+        },
+        "weather": null,
+      },
+      Object {
+        "hazard": null,
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+      Object {
+        "hazard": null,
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+      Object {
+        "hazard": null,
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+      Object {
+        "hazard": null,
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+      Object {
+        "hazard": null,
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+      Object {
+        "hazard": null,
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+      Object {
+        "hazard": null,
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+      Object {
+        "hazard": Object {
+          "hazardCode": "FW.W",
+          "hazardType": "long duration",
+          "phenomena": "Red Flag",
+          "significance": "Warning",
+          "url": "http://forecast.weather.gov/wwamap/wwatxtget.php?cwa=mfl&wwa=Red%20Flag%20Warning",
+        },
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+      Object {
+        "hazard": Object {
+          "hazardCode": "FW.W",
+          "hazardType": "long duration",
+          "phenomena": "Red Flag",
+          "significance": "Warning",
+          "url": "http://forecast.weather.gov/wwamap/wwatxtget.php?cwa=mfl&wwa=Red%20Flag%20Warning",
+        },
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+      Object {
+        "hazard": Object {
+          "hazardCode": "FW.W",
+          "hazardType": "long duration",
+          "phenomena": "Red Flag",
+          "significance": "Warning",
+          "url": "http://forecast.weather.gov/wwamap/wwatxtget.php?cwa=mfl&wwa=Red%20Flag%20Warning",
+        },
+        "icon": "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+        "precipitation": "1",
+        "temperature": Object {
+          "max": "24",
+          "min": "16",
+        },
+        "weather": Object {
+          "additional": Array [
+            Object {
+              "coverage": "likely",
+              "intensity": "light",
+              "qualifier": "none",
+              "weather-type": "rain showers",
+            },
+          ],
+          "summary": "Rain Showers Likely",
+        },
+      },
+    ],
+  },
+]
+`;

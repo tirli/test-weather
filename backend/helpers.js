@@ -48,9 +48,13 @@ function getWeather(weather, timeLayout, time) {
 
   if (!weatherCondition || !get(weatherCondition, '$.weather-summary')) return NO_DATA;
 
+  const added = get(weatherCondition, 'value', []);
+  console.log(weatherCondition);
+  const additional = added.map(w => console.log(w) || w.$);
+
   return {
     summary: get(weatherCondition, '$.weather-summary'),
-    additional: get(weatherCondition, 'value', []).map(w => w.$),
+    additional,
   };
 }
 

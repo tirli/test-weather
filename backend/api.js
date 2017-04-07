@@ -37,7 +37,7 @@ module.exports = async function api(cl) {
       latitude,
       longitude,
       start = new Date(),
-      days = 1,
+      days = 3,
       unit = 'm',
       format = '24 hourly',
     } } = parseUrl(ctx.request.url, true);

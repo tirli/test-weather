@@ -29,13 +29,17 @@
         "summarization": "24hourly"
       },
       "layout-key": [
-        "k-p24h-n1-1"
+        "k-p24h-n3-1"
       ],
       "start-valid-time": [
-        "2017-04-07T06:00:00-04:00"
+        "2017-04-07T06:00:00-04:00",
+        "2017-04-08T06:00:00-04:00",
+        "2017-04-09T06:00:00-04:00"
       ],
       "end-valid-time": [
-        "2017-04-08T06:00:00-04:00"
+        "2017-04-08T06:00:00-04:00",
+        "2017-04-09T06:00:00-04:00",
+        "2017-04-10T06:00:00-04:00"
       ]
     },
     {
@@ -44,15 +48,23 @@
         "summarization": "12hourly"
       },
       "layout-key": [
-        "k-p12h-n2-2"
+        "k-p12h-n6-2"
       ],
       "start-valid-time": [
         "2017-04-07T06:00:00-04:00",
-        "2017-04-07T18:00:00-04:00"
+        "2017-04-07T18:00:00-04:00",
+        "2017-04-08T06:00:00-04:00",
+        "2017-04-08T18:00:00-04:00",
+        "2017-04-09T06:00:00-04:00",
+        "2017-04-09T18:00:00-04:00"
       ],
       "end-valid-time": [
         "2017-04-07T18:00:00-04:00",
-        "2017-04-08T06:00:00-04:00"
+        "2017-04-08T06:00:00-04:00",
+        "2017-04-08T18:00:00-04:00",
+        "2017-04-09T06:00:00-04:00",
+        "2017-04-09T18:00:00-04:00",
+        "2017-04-10T06:00:00-04:00"
       ]
     },
     {
@@ -61,13 +73,30 @@
         "summarization": "24hourly"
       },
       "layout-key": [
-        "k-p10h-n1-3"
+        "k-p7h-n1-3"
       ],
       "start-valid-time": [
-        "2017-04-07T10:00:00-04:00"
+        "2017-04-07T13:00:00-04:00"
       ],
       "end-valid-time": [
         "2017-04-07T20:00:00-04:00"
+      ]
+    },
+    {
+      "$": {
+        "time-coordinate": "local",
+        "summarization": "24hourly"
+      },
+      "layout-key": [
+        "k-p19h-n2-4"
+      ],
+      "start-valid-time": [
+        "2017-04-07T13:00:00-04:00",
+        "2017-04-08T06:00:00-04:00"
+      ],
+      "end-valid-time": [
+        "2017-04-08T06:00:00-04:00",
+        "2017-04-08T08:00:00-04:00"
       ]
     }
   ],
@@ -81,26 +110,30 @@
           "$": {
             "type": "maximum",
             "units": "Celsius",
-            "time-layout": "k-p24h-n1-1"
+            "time-layout": "k-p24h-n3-1"
           },
           "name": [
             "Daily Maximum Temperature"
           ],
           "value": [
-            "24"
+            "24",
+            "25",
+            "25"
           ]
         },
         {
           "$": {
             "type": "minimum",
             "units": "Celsius",
-            "time-layout": "k-p24h-n1-1"
+            "time-layout": "k-p24h-n3-1"
           },
           "name": [
             "Daily Minimum Temperature"
           ],
           "value": [
-            "14"
+            "16",
+            "18",
+            "19"
           ]
         }
       ],
@@ -109,21 +142,25 @@
           "$": {
             "type": "12 hour",
             "units": "percent",
-            "time-layout": "k-p12h-n2-2"
+            "time-layout": "k-p12h-n6-2"
           },
           "name": [
             "12 Hourly Probability of Precipitation"
           ],
           "value": [
             "1",
-            "2"
+            "2",
+            "2",
+            "11",
+            "7",
+            "5"
           ]
         }
       ],
       "weather": [
         {
           "$": {
-            "time-layout": "k-p24h-n1-1"
+            "time-layout": "k-p24h-n3-1"
           },
           "name": [
             "Weather Type, Coverage, and Intensity"
@@ -131,7 +168,27 @@
           "weather-conditions": [
             {
               "$": {
+                "weather-summary": "Rain Showers Likely"
+              },
+              "value": [
+                {
+                  "$": {
+                    "coverage": "likely",
+                    "intensity": "light",
+                    "weather-type": "rain showers",
+                    "qualifier": "none"
+                  }
+                }
+              ]
+            },
+            {
+              "$": {
                 "weather-summary": "Sunny"
+              }
+            },
+            {
+              "$": {
+                "weather-summary": "Mostly Sunny"
               }
             }
           ]
@@ -141,20 +198,22 @@
         {
           "$": {
             "type": "forecast-NWS",
-            "time-layout": "k-p24h-n1-1"
+            "time-layout": "k-p24h-n3-1"
           },
           "name": [
             "Conditions Icons"
           ],
           "icon-link": [
-            "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg"
+            "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg",
+            "http://www.nws.noaa.gov/weather/images/fcicons/few.jpg",
+            "http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg"
           ]
         }
       ],
       "hazards": [
         {
           "$": {
-            "time-layout": "k-p10h-n1-3"
+            "time-layout": "k-p7h-n1-3"
           },
           "name": [
             "Watches, Warnings, and Advisories"
@@ -171,6 +230,42 @@
                   },
                   "hazardTextURL": [
                     "http://forecast.weather.gov/wwamap/wwatxtget.php?cwa=mfl&wwa=Red%20Flag%20Warning"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$": {
+            "time-layout": "k-p19h-n2-4"
+          },
+          "name": [
+            "Watches, Warnings, and Advisories"
+          ],
+          "hazard-conditions": [
+            {
+              "hazard": [
+                {
+                  "$": {
+                    "hazardCode": "SM.Y",
+                    "phenomena": "Dense Smoke",
+                    "significance": "Advisory",
+                    "hazardType": "long duration"
+                  },
+                  "hazardTextURL": [
+                    "http://forecast.weather.gov/wwamap/wwatxtget.php?cwa=mfl&wwa=Dense%20Smoke%20Advisory"
+                  ]
+                },
+                {
+                  "$": {
+                    "hazardCode": "SM.Y",
+                    "phenomena": "Dense Smoke",
+                    "significance": "Advisory",
+                    "hazardType": "long duration"
+                  },
+                  "hazardTextURL": [
+                    "http://forecast.weather.gov/wwamap/wwatxtget.php?cwa=mfl&wwa=Dense%20Smoke%20Advisory"
                   ]
                 }
               ]

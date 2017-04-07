@@ -82,10 +82,10 @@
       </probability-of-precipitation>
       <weather time-layout="k-p24h-n3-1">
         <name>Weather Type, Coverage, and Intensity</name>
+        <weather-conditions weather-summary="Sunny"/>
         <weather-conditions weather-summary="Rain Showers Likely">
           <value coverage="likely" intensity="light" weather-type="rain showers" qualifier="none"/>
         </weather-conditions>
-        <weather-conditions weather-summary="Sunny"/>
         <weather-conditions weather-summary="Mostly Sunny"/>
       </weather>
       <conditions-icon type="forecast-NWS" time-layout="k-p24h-n3-1">

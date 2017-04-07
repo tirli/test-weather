@@ -31,7 +31,7 @@ test('Should return forecast in json from xml data', async () => {
     latitude: 25.80,
     longitude: 80.28,
     start: '2017-04-07T15:04:55.535Z',
-    days: '1',
+    days: '3',
   };
   const ctx = {
     body: '',
