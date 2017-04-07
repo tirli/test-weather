@@ -12,7 +12,7 @@ Software:
 
 ## First run
 
-`yarn prod -- --build` or `npm start prod -- --build`
+`yarn prod -- --build` or `npm run prod -- --build`
 
 ## Subsequent runs
 
