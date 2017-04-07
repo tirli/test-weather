@@ -8,6 +8,16 @@ process.on('unhandledRejection', (err) => {
   console.error(err);
 });
 
+app.use(async (ctx, next) => {
+  try {
+    await next();
+  } catch (e) {
+    ctx.status = e.status || 500;
+    ctx.type = 'application/json';
+    ctx.body = e.message;
+  }
+});
+
 createApi().then((api) => {
   app.use(router.get('/api/cities', api.cities));
   app.use(router.get('/api/forecast', api.forecast));

@@ -1,0 +1,398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should return cities list in json from xml data 1`] = `
+Array [
+  Object {
+    "city": "Oklahoma City,OK",
+    "latitude": "35.4",
+    "longitude": "-97.6",
+  },
+  Object {
+    "city": "Tulsa,OK",
+    "latitude": "36.2",
+    "longitude": "-95.9",
+  },
+  Object {
+    "city": "Knoxville,TN",
+    "latitude": "35.82",
+    "longitude": "-83.98",
+  },
+  Object {
+    "city": "Atlanta,GA",
+    "latitude": "33.65",
+    "longitude": "-84.42",
+  },
+  Object {
+    "city": "Reno,NV",
+    "latitude": "39.5",
+    "longitude": "-119.78",
+  },
+  Object {
+    "city": "Flagstaff,AZ",
+    "latitude": "35.13",
+    "longitude": "-111.67",
+  },
+  Object {
+    "city": "Phoenix,AZ",
+    "latitude": "33.44",
+    "longitude": "-112.02",
+  },
+  Object {
+    "city": "Tucson,AZ",
+    "latitude": "32.12",
+    "longitude": "-110.93",
+  },
+  Object {
+    "city": "Jackson,TN",
+    "latitude": "35.60",
+    "longitude": "-88.92",
+  },
+  Object {
+    "city": "Little Rock,AR",
+    "latitude": "35.22",
+    "longitude": "-92.38",
+  },
+  Object {
+    "city": "Los Angeles,CA",
+    "latitude": "34.027",
+    "longitude": "-118.329",
+  },
+  Object {
+    "city": "San Diego,CA",
+    "latitude": "32.73",
+    "longitude": "-117.17",
+  },
+  Object {
+    "city": "Pueblo,CO",
+    "latitude": "38.29",
+    "longitude": "-10
+",
+  },
+  Object {
+    "city": "Denver,CO",
+    "latitude": "",
+    "longitude": undefined,
+  },
+  Object {
+    "city": "
+  Washington,DC",
+    "latitude": "4.52",
+    "longitude": undefined,
+  },
+  Object {
+    "city": "Key West,FL",
+    "latitude": "39.75",
+    "longitude": "-104.87",
+  },
+  Object {
+    "city": "Miami,FL",
+    "latitude": "38.85",
+    "longitude": "-77.04",
+  },
+  Object {
+    "city": "Orlando,FL",
+    "latitude": "24.58",
+    "longitude": "-81.75",
+  },
+  Object {
+    "city": "Tampa,FL",
+    "latitude": "25.80",
+    "longitude": "-80.28",
+  },
+  Object {
+    "city": "Boise,ID",
+    "latitude": "28.55",
+    "longitude": "-81.33",
+  },
+  Object {
+    "city": "Chicago,IL",
+    "latitude": "27.97",
+    "longitude": "-82.53",
+  },
+  Object {
+    "city": "Springfield,IL",
+    "latitude": "43.57",
+    "longitude": "-116.22",
+  },
+  Object {
+    "city": "Goodland,KS",
+    "latitude": "41.98",
+    "longitude": "-87.9",
+  },
+  Object {
+    "city": "Paducah,KY",
+    "latitude": "39.85",
+    "longitude": "-89.67",
+  },
+  Object {
+    "city": "New Orleans,LA",
+    "latitude": "39.37",
+    "longitude": "-101.7",
+  },
+  Object {
+    "city": "Bangor,ME",
+    "latitude": "37.07",
+    "longitude": "-88.77",
+  },
+  Object {
+    "city": "Caribou,ME",
+    "latitude": "30.03",
+    "longitude": "-90.03",
+  },
+  Object {
+    "city": "Portland,ME",
+    "latitude": "44.801",
+    "longitude": "-68.778",
+  },
+  Object {
+    "city": "Baltimore,MD",
+    "latitude": "46.861",
+    "longitude": "-68.012",
+  },
+  Object {
+    "city": "Detroit,MI",
+    "latitude": "43
+",
+    "longitude": undefined,
+  },
+  Object {
+    "city": "Marquette,MI",
+    "latitude": "",
+    "longitude": undefined,
+  },
+  Object {
+    "city": "Duluth,MN",
+    "latitude": ".65",
+    "longitude": "-70.32",
+  },
+  Object {
+    "city": "Minneapolis,MN",
+    "latitude": "39.18",
+    "longitude": "-76.67",
+  },
+  Object {
+    "city": "Tupelo,MS",
+    "latitude": "42.23",
+    "longitude": "-83.33",
+  },
+  Object {
+    "city": "St Louis,MO",
+    "latitude": "46.54",
+    "longitude": "-87.41",
+  },
+  Object {
+    "city": "Billings,MT",
+    "latitude": "46.83",
+    "longitude": "-92.18",
+  },
+  Object {
+    "city": "Butte,MT",
+    "latitude": "44.88",
+    "longitude": "-93.22",
+  },
+  Object {
+    "city": "Glasgow,MT",
+    "latitude": "34.27",
+    "longitude": "-88.77",
+  },
+  Object {
+    "city": "Missoula,MT",
+    "latitude": "38.75",
+    "longitude": "-90.37",
+  },
+  Object {
+    "city": "Elko,NV",
+    "latitude": "45.8",
+    "longitude": "-108.53",
+  },
+  Object {
+    "city": "Las Vegas,NV",
+    "latitude": "45.95",
+    "longitude": "-112.5",
+  },
+  Object {
+    "city": "Albuquerque,NM",
+    "latitude": "48.22",
+    "longitude": "-106.62",
+  },
+  Object {
+    "city": "Albany,NY",
+    "latitude": "46.92",
+    "longitude": "-114.08",
+  },
+  Object {
+    "city": "Buffalo,NY",
+    "latitude": "40.83",
+    "longitude": "-115.78",
+  },
+  Object {
+    "city": "Syracuse,NY",
+    "latitude": "36.08",
+    "longitude": "-115.17",
+  },
+  Object {
+    "city": "New York,NY",
+    "latitude": "35.05",
+    "longitude": "-106
+",
+  },
+  Object {
+    "city": "Bismarck,ND",
+    "latitude": "",
+    "longitude": undefined,
+  },
+  Object {
+    "city": "Fargo$ND",
+    "latitude": ".6",
+    "longitude": undefined,
+  },
+  Object {
+    "city": "Minot,ND",
+    "latitude": "42.75",
+    "longitude": "-73.8",
+  },
+  Object {
+    "city": "Cleveland,OH",
+    "latitude": "42.93",
+    "longitude": "-78.73",
+  },
+  Object {
+    "city": "Columbus,OH",
+    "latitude": "43.12",
+    "longitude": "-76.12",
+  },
+  Object {
+    "city": "Toledo,OH",
+    "latitude": "40.77",
+    "longitude": "-73.98",
+  },
+  Object {
+    "city": "Portland,OR",
+    "latitude": "46.77",
+    "longitude": "-100.75",
+  },
+  Object {
+    "city": "Erie,PA",
+    "latitude": "46.9",
+    "longitude": "-96.8",
+  },
+  Object {
+    "city": "Philadelphia,PA",
+    "latitude": "48.27",
+    "longitude": "-101.28",
+  },
+  Object {
+    "city": "Pittsburgh,PA",
+    "latitude": "41.42",
+    "longitude": "-81.87",
+  },
+  Object {
+    "city": "Hartford,CT",
+    "latitude": "40.00",
+    "longitude": "-82.88",
+  },
+  Object {
+    "city": "Sioux Falls,SD",
+    "latitude": "41.6",
+    "longitude": "-83.8",
+  },
+  Object {
+    "city": "Nashville,TN",
+    "latitude": "45.6",
+    "longitude": "-122.6",
+  },
+  Object {
+    "city": "Austin,TX",
+    "latitude": "42.08",
+    "longitude": "-80.18",
+  },
+  Object {
+    "city": "Brownsville,TX",
+    "latitude": "39.88",
+    "longitude": "-75.25",
+  },
+  Object {
+    "city": "Dallas,TX",
+    "latitude": "40.35",
+    "longitude": "-79.93",
+  },
+  Object {
+    "city": "El Paso,TX",
+    "latitude": "41.73",
+    "longitude": "-72.65
+",
+  },
+  Object {
+    "city": "Midland,TX$Houston,TX",
+    "latitude": "",
+    "longitude": undefined,
+  },
+  Object {
+    "city": "San Antonio,TX",
+    "latitude": "43.58",
+    "longitude": "-96.73",
+  },
+  Object {
+    "city": "Salt Lake City,UT",
+    "latitude": "36.17",
+    "longitude": "-86.78",
+  },
+  Object {
+    "city": "Spokane,WA",
+    "latitude": "30.3",
+    "longitude": "-97.7",
+  },
+  Object {
+    "city": "Milwaukee,WI",
+    "latitude": "25.9",
+    "longitude": "-97.43",
+  },
+  Object {
+    "city": "Richmond,VA",
+    "latitude": "32.9",
+    "longitude": "-97.03",
+  },
+  Object {
+    "city": "San Juan,PR",
+    "latitude": "31.8",
+    "longitude": "-106.4",
+  },
+  Object {
+    "city": "St Thomas,VI",
+    "latitude": "32.00",
+    "longitude": "-102.08",
+  },
+  Object {
+    "city": "St Croix,VI",
+    "latitude": "29.65",
+    "longitude": "-95.28",
+  },
+  Object {
+    "city": "Anchorage,AK",
+    "latitude": "29.53",
+    "longitude": "-98.47",
+  },
+  Object {
+    "city": "Barrow,AK",
+    "latitude": "40.78",
+    "longitude": "-111.97",
+  },
+  Object {
+    "city": "Fairbanks,AK",
+    "latitude": "47.63",
+    "longitude": "-117.53",
+  },
+  Object {
+    "city": "Juneau,AK",
+    "latitude": "42.95",
+    "longitude": "-87.9",
+  },
+  Object {
+    "city": "Nome,AK",
+    "latitude": "37.5",
+    "longitude": "-77.33",
+  },
+]
+`;
+
+exports[`Should return error for missing query 1`] = `[Error: Missing query params. latitude and longitude are required]`;

@@ -1,0 +1,183 @@
+{
+  "location": [
+    {
+      "location-key": [
+        "point1"
+      ],
+      "point": [
+        {
+          "$": {
+            "latitude": "25.80",
+            "longitude": "-80.28"
+          }
+        }
+      ]
+    }
+  ],
+  "moreWeatherInformation": [
+    {
+      "_": "http://forecast.weather.gov/MapClick.php?textField1=25.80&textField2=-80.28",
+      "$": {
+        "applicable-location": "point1"
+      }
+    }
+  ],
+  "time-layout": [
+    {
+      "$": {
+        "time-coordinate": "local",
+        "summarization": "24hourly"
+      },
+      "layout-key": [
+        "k-p24h-n1-1"
+      ],
+      "start-valid-time": [
+        "2017-04-07T06:00:00-04:00"
+      ],
+      "end-valid-time": [
+        "2017-04-08T06:00:00-04:00"
+      ]
+    },
+    {
+      "$": {
+        "time-coordinate": "local",
+        "summarization": "12hourly"
+      },
+      "layout-key": [
+        "k-p12h-n2-2"
+      ],
+      "start-valid-time": [
+        "2017-04-07T06:00:00-04:00",
+        "2017-04-07T18:00:00-04:00"
+      ],
+      "end-valid-time": [
+        "2017-04-07T18:00:00-04:00",
+        "2017-04-08T06:00:00-04:00"
+      ]
+    },
+    {
+      "$": {
+        "time-coordinate": "local",
+        "summarization": "24hourly"
+      },
+      "layout-key": [
+        "k-p10h-n1-3"
+      ],
+      "start-valid-time": [
+        "2017-04-07T10:00:00-04:00"
+      ],
+      "end-valid-time": [
+        "2017-04-07T20:00:00-04:00"
+      ]
+    }
+  ],
+  "parameters": [
+    {
+      "$": {
+        "applicable-location": "point1"
+      },
+      "temperature": [
+        {
+          "$": {
+            "type": "maximum",
+            "units": "Celsius",
+            "time-layout": "k-p24h-n1-1"
+          },
+          "name": [
+            "Daily Maximum Temperature"
+          ],
+          "value": [
+            "24"
+          ]
+        },
+        {
+          "$": {
+            "type": "minimum",
+            "units": "Celsius",
+            "time-layout": "k-p24h-n1-1"
+          },
+          "name": [
+            "Daily Minimum Temperature"
+          ],
+          "value": [
+            "14"
+          ]
+        }
+      ],
+      "probability-of-precipitation": [
+        {
+          "$": {
+            "type": "12 hour",
+            "units": "percent",
+            "time-layout": "k-p12h-n2-2"
+          },
+          "name": [
+            "12 Hourly Probability of Precipitation"
+          ],
+          "value": [
+            "1",
+            "2"
+          ]
+        }
+      ],
+      "weather": [
+        {
+          "$": {
+            "time-layout": "k-p24h-n1-1"
+          },
+          "name": [
+            "Weather Type, Coverage, and Intensity"
+          ],
+          "weather-conditions": [
+            {
+              "$": {
+                "weather-summary": "Sunny"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions-icon": [
+        {
+          "$": {
+            "type": "forecast-NWS",
+            "time-layout": "k-p24h-n1-1"
+          },
+          "name": [
+            "Conditions Icons"
+          ],
+          "icon-link": [
+            "http://www.nws.noaa.gov/weather/images/fcicons/skc.jpg"
+          ]
+        }
+      ],
+      "hazards": [
+        {
+          "$": {
+            "time-layout": "k-p10h-n1-3"
+          },
+          "name": [
+            "Watches, Warnings, and Advisories"
+          ],
+          "hazard-conditions": [
+            {
+              "hazard": [
+                {
+                  "$": {
+                    "hazardCode": "FW.W",
+                    "phenomena": "Red Flag",
+                    "significance": "Warning",
+                    "hazardType": "long duration"
+                  },
+                  "hazardTextURL": [
+                    "http://forecast.weather.gov/wwamap/wwatxtget.php?cwa=mfl&wwa=Red%20Flag%20Warning"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

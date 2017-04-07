@@ -2,16 +2,16 @@ const soap = require('soap');
 const xml2js = require('xml2js');
 const promisify = require('es6-promisify');
 const parseUrl = require('url').parse;
-const { denormalizeForecast } = require('./helpers');
+const helpers = require('./helpers');
 
 const createSoapClient = promisify(soap.createClient);
-const parseXML = promisify(xml2js.parseString);
+const url = 'https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php?wsdl';
 
-module.exports = async function api() {
-  const url = 'https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php?wsdl';
-  const client = await createSoapClient(url, {});
+module.exports = async function api(cl) {
+  const client = cl || await createSoapClient(url, {});
 
   async function cities(ctx) {
+    const parseXML = promisify(xml2js.parseString);
     const getCityList = promisify(client.LatLonListCityNames);
     const response = await getCityList({ displayLevel: 1234 });
     const res = await parseXML(response.listLatLonOut.$value);
@@ -31,15 +31,21 @@ module.exports = async function api() {
   }
 
   async function forecast(ctx) {
+    const parseXML = promisify(xml2js.parseString);
     const getForecast = promisify(client.NDFDgenByDay);
     const { query: {
       latitude,
       longitude,
       start = new Date(),
-      days = 7,
+      days = 1,
       unit = 'm',
       format = '24 hourly',
     } } = parseUrl(ctx.request.url, true);
+
+    if (!latitude || !longitude) {
+      ctx.throw('Missing query params. latitude and longitude are required', 422);
+    }
+
     const response = await getForecast({
       latitude,
       longitude,
@@ -51,7 +57,7 @@ module.exports = async function api() {
 
     const result = await parseXML(response.dwmlByDayOut.$value);
 
-    ctx.body = denormalizeForecast(result.dwml.data[0], start, days);
+    ctx.body = helpers.denormalizeForecast(result.dwml.data[0], start, days);
   }
 
   return {
