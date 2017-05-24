@@ -4,8 +4,7 @@
   "description": "Test weather project",
   "scripts": {
     "prod": "docker-compose -f ./dockerfiles/docker-compose.yml up",
-    "dev": "docker-compose -f ./dockerfiles/docker-compose-dev.yml up",
-    "test": "cd ./backend && npm test"
+    "dev": "docker-compose -f ./dockerfiles/docker-compose-dev.yml up"
   },
   "repository": {
     "type": "git",
